@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important; }
+
+.hide {
+  display: none !important; }
+
+input:focus {
+  outline: none !important; }
+
+.invalid-message {
+  display: none;
+  color: red; }
+
+.invalid {
+  border: 1px solid red; }
+  .invalid + span {
+    display: block !important; }
+
+.d30 {
+  width: 0;
+  height: 0;
+  border-width: 50px 30px 20px;
+  border-style: solid;
+  border-color: transparent transparent #E95557 #E95557; }
+
+/*EMPLOYEES*/
+.employees {
+  display: flex;
+  justify-content: center; }
+  .employees__block {
+    width: 80%;
+    padding: 30px;
+    box-shadow: 0.5px 0.5px 10px 4px rgba(9, 9, 9, 0.5); }
+  .employees__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px; }
+  .employees__btn {
+    display: inline-block;
+    padding: 13px 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 13px; }
+    .employees__btn_uppercase {
+      text-transform: uppercase; }
+    .employees__btn_block {
+      display: block !important; }
+    .employees__btn_default {
+      color: gray;
+      transition: box-shadow 0.2s; }
+      .employees__btn_default.active, .employees__btn_default:hover {
+        box-shadow: 0.5px 0.5px 6px 0px rgba(9, 9, 9, 0.6); }
+    .employees__btn_green {
+      border: 1px solid green;
+      background: green;
+      color: #fff; }
+      .employees__btn_green.active {
+        background: green;
+        color: #fff; }
+    .employees__btn_primary {
+      border: 1px solid blue;
+      background: blue;
+      color: #fff; }
+      .employees__btn_primary.active {
+        background: blue;
+        color: #fff; }
+    .employees__btn_warning {
+      border: 1px solid darkorange;
+      background: darkorange;
+      color: #fff; }
+      .employees__btn_warning.active {
+        background: darkorange;
+        color: #fff; }
+    .employees__btn_danger {
+      border: 1px solid darkred;
+      background: darkred;
+      color: #fff; }
+      .employees__btn_danger.active {
+        background: darkred;
+        color: #fff; }
+  .employees__content {
+    min-height: 100vh;
+    padding: 30px; }
+  .employees__form-group {
+    margin-bottom: 15px; }
+  .employees__form-control {
+    padding: 15px 10px;
+    width: 100%; }
+  .employees__list-control {
+    padding: 15px 10px;
+    width: 100%; }
+  .employees__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 30px; }
+  .employees__list-text h5 {
+    font-size: 20px;
+    margin-bottom: 5px; }
+  .employees__list-text p {
+    margin-bottom: 5px; }
+  .employees__list-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .employees__list-buttons > div:first-child {
+      margin-right: 10px; }
+
+/*EMPLOYEES*/

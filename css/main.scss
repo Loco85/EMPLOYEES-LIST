@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box!important;
+}
+.hide {
+	display: none!important;
+}
+input {
+	&:focus {
+		outline: none!important;
+	}
+}
+.invalid-message {
+	display: none;
+	color: red;
+}
+.invalid {
+	border: 1px solid red;
+	&+span {
+		display: block!important;
+	}
+}
+.d30 {
+width: 0; 
+height: 0; 
+border-width: 50px 30px 20px;
+border-style: solid;
+border-color:  transparent transparent #E95557 #E95557;
+}
+/*EMPLOYEES*/
+.employees {
+	display: flex;
+	justify-content: center;
+	&__block {
+		width: 80%;
+		padding: 30px;
+		box-shadow: 0.5px 0.5px 10px 4px rgba(9,9,9,0.5);
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px;
+	}
+	&__btn {
+		display: inline-block;
+		padding: 13px 15px;
+		text-decoration: none;
+		text-align: center;
+		border-radius: 13px;
+		&_uppercase {
+			text-transform: uppercase;
+		}
+		&_block {
+			display: block!important;
+		}
+		&_default {
+			// border: 1px solid gray;
+			color: gray;
+			transition: box-shadow 0.2s;
+			&.active,&:hover {
+				// background: gray;
+				// color: #fff;
+				box-shadow: 0.5px 0.5px 6px 0px rgba(9,9,9,0.6);
+			}
+		}
+		&_green {
+			border: 1px solid green;
+			background: green;
+			color: #fff;
+			&.active {
+				background: green;
+				color: #fff;
+			}
+		}
+		&_primary {
+			border: 1px solid blue;
+			background: blue;
+			color: #fff;
+			&.active {
+				background: blue;
+				color: #fff;
+			}
+		}
+		&_warning {
+			border: 1px solid darkorange;
+			background: darkorange;
+			color: #fff;
+			&.active {
+				background: darkorange;
+				color: #fff;
+			}
+		}
+		&_danger {
+			border: 1px solid darkred;
+			background: darkred;
+			color: #fff;
+			&.active {
+				background: darkred;
+				color: #fff;
+			}
+		}
+	}
+	&__content {
+		// display: flex;
+		// justify-content: space-between;
+		min-height: 100vh;
+		padding: 30px;
+	}
+	&__add-block {
+
+	}
+	&__form {
+		&-group {
+			margin-bottom: 15px;
+		}
+		&-control {
+			padding: 15px 10px;
+			// font-size: 18px;
+			width: 100%;
+		}
+	}
+	&__list-control {
+		padding: 15px 10px;
+		width: 100%;
+	}
+	&__list-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid #ddd;
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+	&__list-text {
+		h5 {
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+		p {
+			margin-bottom: 5px;
+		}
+	}
+	&__list-buttons {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&>div {
+			&:first-child {
+				margin-right: 10px;
+			}
+		}
+		a {
+
+		}
+	}
+} 
+/*EMPLOYEES*/ 

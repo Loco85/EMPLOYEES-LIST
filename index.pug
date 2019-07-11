@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Employees list
+body
+	section.employees
+		div.employees__block
+			div.employees__nav#employees-nav
+				div
+					a.employees__btn.employees__btn_default.employees__btn_uppercase(href="#add-block", data-nav="nav") Add employee
+				div
+					a.employees__btn.employees__btn_default.employees__btn_uppercase.active(href="#list-block", data-nav="nav") Employees list
+			div.employees__content
+				div.employees__add-block.hide(id="add-block", data-content="employee")
+					form#employees-form
+						div.employees__form
+							div.employees__form-group
+								input.employees__form-control(type="text", name="name", placeholder="Name")
+								span.invalid-message Fill out the field
+							div.employees__form-group
+								input.employees__form-control(type="tel", name="phone", placeholder="Phone")
+								span.invalid-message Fill out the field
+							div.employees__form-group
+								input.employees__form-control(type="email", name="email", placeholder="Email")
+								span.invalid-message Fill out the field
+							div.employees__form-group
+								input.employees__form-control(type="text", name="position", placeholder="Position")
+								span.invalid-message Fill out the field
+							div.employees__form-group
+								button(type="submit").employees__btn.employees__btn_uppercase.employees__btn_primary Add
+				div.employees__list-block(id="list-block", data-content="employee")
+
+					
